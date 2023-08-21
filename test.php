@@ -1,11 +1,11 @@
 <?php
-echo 'test'; die();
+echo 'test';
 
 require_once("vendor/autoload.php");
-?>
+
 use Minishlink\WebPush\Subscription;
 use Minishlink\WebPush\WebPush;
-
+?>
 $auth = [
     'VAPID' => [
         'subject' => 'mailto:me@website.com', // can be a mailto: or your website address
