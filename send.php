@@ -16,6 +16,6 @@ $auth = [
 $webPush = new WebPush($auth);
 
 $report = $webPush->sendOneNotification(
-    Subscription::create(json_decode('{"endpoint":"https://fcm.googleapis.com/fcm/send/dzF5MFyjBQE:APA91bHX9XKaZM_CgGDtu4YRT4EPoBEKnQEuI_8PjpwUSvufbzo_4QdKUu7wrS8yTTurwAyKUA3Mv7EoU5SP5rRtw4cwEBy2jIU5U1oNDj0Dfs0Txh7qXvNtCZNr1gQeORy2Q4_PPVsH","expirationTime":null,"keys":{"p256dh":"BFq6AJUlGfRUKhhj7aCndI1SG1rivcHRxfJ62dNkyNtRpmnEvNyFycbmoXvfaY7p9zrLZGwmbJhVk_0SakDs9Kg","auth":"lh2MEA_lwy0jQaxNFc0H6g"}}', ['TTL' => 5000]);
+    Subscription::create(json_decode('{"endpoint":"https://fcm.googleapis.com/fcm/send/eoApBqPOGbc:APA91bEO5Rvc3AyR8XFtZNei32q_GpGnlvqPiO1ZkdlC5oaC-clFWA-a63sY1llye8i-M0DMpGriLeQh7d3rbBgrqLlRDaiqf5g3T-P0zYU0v_CkFdzN1wpX-hMnDfys1p5wb8ZljrTe","expirationTime":null,"keys":{"p256dh":"BJhmtryUFtYhamIZ2hWKhqZJYTYizCyCs5rOnIH9USeJ-UbImK989DBvVKJV__84j0pJS-__cPwWDW1yXzkDkZc","auth":"jfc7xzOWBpiGWUBy-v-rHg"}}', ['TTL' => 5000]);
 
     print_r($report);
