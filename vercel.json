@@ -3,5 +3,11 @@
     "api/*.php": {
       "runtime": "vercel-php@0.6.0"
     }
-  }
+  },
+  "crons": [
+    {
+      "path": "/api/send.php",
+      "schedule": "57 9 * * *"
+    }
+  ]
 }
