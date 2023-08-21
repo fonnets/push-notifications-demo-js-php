@@ -15,8 +15,9 @@ $auth = [
 ];
 
 $webPush = new WebPush($auth);
-?>
+
 $report = $webPush->sendOneNotification(
     Subscription::create(json_decode('{"endpoint":"https://fcm.googleapis.com/fcm/send/eoApBqPOGbc:APA91bEO5Rvc3AyR8XFtZNei32q_GpGnlvqPiO1ZkdlC5oaC-clFWA-a63sY1llye8i-M0DMpGriLeQh7d3rbBgrqLlRDaiqf5g3T-P0zYU0v_CkFdzN1wpX-hMnDfys1p5wb8ZljrTe","expirationTime":null,"keys":{"p256dh":"BJhmtryUFtYhamIZ2hWKhqZJYTYizCyCs5rOnIH9USeJ-UbImK989DBvVKJV__84j0pJS-__cPwWDW1yXzkDkZc","auth":"jfc7xzOWBpiGWUBy-v-rHg"}}', ['TTL' => 5000]);
 
     print_r($report);
+?>
