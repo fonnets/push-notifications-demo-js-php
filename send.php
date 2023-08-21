@@ -1,6 +1,6 @@
 <?php
 echo 'test'; die();
-require_once("vendor/autoload.php");
+//require_once("vendor/autoload.php");
 
 use Minishlink\WebPush\Subscription;
 use Minishlink\WebPush\WebPush;
